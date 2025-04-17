@@ -302,7 +302,7 @@ class Wechatmpc{
                         r:redirect || null
                     }
 
-        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d))),"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d)))+"&uuid="+this.uuid,"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
         return await this.loopCheck(pin)
     }
 
@@ -330,7 +330,7 @@ class Wechatmpc{
                 p:1
             }
         }
-        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d))),"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d)))+"&uuid="+this.uuid,"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
         return await this.loopCheck(pin)
     }
 
@@ -361,7 +361,7 @@ class Wechatmpc{
                 p:1
             }
         }
-        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d))),"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        const pin = window.open(this.actionUrl+encodeBase58(Buffer.from(JSON.stringify(d)))+"&uuid="+this.uuid,"newwindow","height=800, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
         return await this.loopCheck(pin)
     }
 }
